@@ -1,14 +1,12 @@
 import styled from "styled-components";
 
-export const MenuWrapper = styled.menu`
+export const MenuWraper = styled.menu`
+    display: flex;
+    padding: 0;
     position: fixed;
-    bottom:0;
-    width:100vw;
-    display:flex;
-    padding:0;
-    margin:0;
-    box-shadow: 0 0px 30px 0px #f1f1f1;
-    overflow: hidden;
+    bottom: 0;
+    width: 100%;
+    margin: 0;
     border-top: 1px solid #ccc;
-    background-color:#ffffff;
+    background-color: #fff;
 `;

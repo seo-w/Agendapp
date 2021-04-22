@@ -1,10 +1,8 @@
 import styled from "styled-components";
 
-export const  LinkWrapper = styled.span ` 
-    a{
+export const LinkWrapper = styled.span`
+    a {
         color: #0f66ff;
-        text-decoration:none;
-        transition: all 0.5s ease;
+        text-decoration: none;
     }
-    a:hover{color:blue;}
 `;

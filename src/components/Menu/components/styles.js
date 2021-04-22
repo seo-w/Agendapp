@@ -1,48 +1,34 @@
 import styled from "styled-components";
 
-export const ItemWrapper = styled.div `
-    flex:1;
-    /*display:flex;
-        flex-direction:column;
-        justify-content:center;
-        align-items:center;
-        padding: 10px 0 0;
-        text-decoration:none;
-        cursor:pointer;
-        transition: all 0.3s ease;*/
-    svg{
+export const ItemWrapper = styled.div`
+    svg {
         color: ${props => props.active ? '#0066FF' : '#C7C7CC'};
-        font-size:1.1.em;
+        font-size: 1.2em;
     }
-    /*border:1px solid red;*/
-    
-    a{
-        display:flex;
-        flex-direction:column;
-        justify-content:center;
-        align-items:center;
-        padding: 10px 0 0;
-        text-decoration:none;
-        cursor:pointer;
-        transition: all 0.3s ease;
-    }
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+    flex: 1;
+    cursor: pointer;
+
     &:hover{
-        /*background-color:#C7C7CC;*/
-        box-shadow: inset 0px 3px 20px 1px #efefef;
-        svg,p{
-            color:#0066FF;
+        svg, p {
+            color: #0066FF;
         }
-        transition: all 0.3s ease;
     }
-    /*.active{ 
-        svg,p{
-            color:#0066FF;
-        }
-    }*/
+    a {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+    }
 `;
+
 export const Label = styled.p`
-    line-height:0;
+    line-height: 0px;
     color: ${props => props.active ? '#0066FF' : '#C7C7CC'};
     font-size: 0.95em;
-    
 `;

@@ -9,6 +9,7 @@ import { Schedule } from "./Schedule";
 import { CreateTask } from "./CreateTask";
 import { TaskDetail } from "./TaskDetail";
 import { Menu } from "../components/Menu";
+import { PageWrapperMenu } from "../globalStyles";
 
 
 const AuthenticatedUser = ({children}) => {
@@ -21,7 +22,9 @@ const AuthenticatedUser = ({children}) => {
 
   return (
     <Fragment>
-      {children}
+      <PageWrapperMenu>
+        {children}
+      </PageWrapperMenu>
       <Menu pathname={pathname} />
     </Fragment>
   )
@@ -40,7 +43,7 @@ export const NavigationApp = () => {
     setTimeout(() => {
       setAuth(true);
       setIsLoading(false);
-    }, 700);
+    }, 1000);
   }, []);
 
   if (isLoading) {
@@ -68,7 +71,7 @@ export const NavigationApp = () => {
               <Route exact path="/" component={Home} />
               <Route path="/schedule" component={Schedule} />
               <Route path="/create" component={CreateTask} />
-              <Route path="/detail" component={TaskDetail} />
+              <Route path="/detail/:id" component={TaskDetail} />
               <Route path="*" component={NotFound} />
             </Switch>
           </AuthenticatedUser>

@@ -1,5 +1,5 @@
-import { Link } from "react-router-dom";
-import { ItemWrapper, Label } from "./styles";
+import { Link } from "react-router-dom"
+import { ItemWrapper, Label } from "./styles"
 
 export const ItemMenu = ({label, icon: Icon, path, active}) => (
     <ItemWrapper active={active}>
